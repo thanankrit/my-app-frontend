@@ -1,0 +1,79 @@
+.research-container {
+  padding: 40px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.research-card {
+  width: 100%;
+  max-width: 700px; 
+  padding: 32px 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.back-btn {
+  margin-bottom: 24px;
+  border-radius: 6px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 32px;
+  text-align: center;
+  color: #333;
+}
+
+.select-btn {
+  height: 60px;
+  font-size: 18px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.full-row {
+  grid-column: 1 / -1;
+}
+
+.submit-btn {
+  margin-top: 24px;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
+  .research-container {
+    padding: 20px 12px;
+  }
+
+  .research-card {
+    padding: 20px 16px;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+
+  .select-btn {
+    height: 54px;
+    font-size: 16px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}

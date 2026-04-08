@@ -1,0 +1,115 @@
+.edit-survey-wrapper {
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.edit-survey-card {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.loading-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.date-group-container {
+  display: flex;
+  gap: 16px;
+}
+
+.date-input-item {
+  flex: 1;
+}
+
+.main-topic-card {
+  margin-bottom: 16px;
+  border-color: #d9d9d9;
+}
+
+.topic-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.topic-header h4 {
+  margin: 0;
+  flex: 1;
+}
+
+.delete-icon {
+  color: red;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.delete-sub-icon {
+  color: #999;
+  font-size: 16px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.subtopic-container {
+  padding-left: 24px;
+}
+
+.subtopic-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+  align-items: flex-start;
+}
+
+.subtopic-input {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.add-subtopic-btn {
+  margin-top: 8px;
+}
+
+.add-maintopic-btn {
+  margin-bottom: 16px;
+  height: 40px;
+}
+
+.form-action-footer {
+  margin-top: 24px;
+}
+
+
+@media (max-width: 768px) {
+  .edit-survey-wrapper {
+    padding: 12px;
+  }
+  .date-group-container {
+    flex-direction: column;
+    gap: 0;
+  }
+  .subtopic-container {
+    padding-left: 0;
+    margin-top: 16px;
+  }
+  .action-space {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px !important;
+  }
+
+  .action-space .ant-space-item {
+    width: 100%;
+  }
+
+  .save-btn {
+    width: 100%;
+  }
+}

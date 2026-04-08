@@ -1,0 +1,41 @@
+.user-type-selection-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh; 
+  background-color: #f0f2f5;
+  padding: 20px; 
+}
+
+.user-type-selection-card {
+  padding: 30px;
+  width: 100%;        
+  max-width: 400px;   
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05); 
+}
+
+.selection-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px; 
+}
+
+.selection-btn {
+  font-size: 16px;
+  height: 48px; 
+  border-radius: 8px;
+}
+
+
+@media screen and (max-width: 576px) {
+  .user-type-selection-card {
+    padding: 24px 16px; 
+  }
+
+  .selection-title {
+    font-size: 20px; 
+    margin-bottom: 20px;
+  }
+}

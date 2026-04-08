@@ -1,0 +1,104 @@
+.report-survey-container {
+  padding: 24px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.report-card {
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  border: none;
+  overflow: hidden;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #1f2937;
+}
+
+.report-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.report-actions button {
+  border-radius: 8px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  border: none;
+  box-shadow: none !important;
+}
+
+.report-filters {
+  margin-bottom: 24px;
+}
+
+.custom-select.ant-select .ant-select-selector {
+  background-color: #f1f3f5 !important; 
+  border: none !important;             
+  border-radius: 10px !important;
+  box-shadow: none !important;         
+  height: 42px !important;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+.custom-select.ant-select:hover .ant-select-selector,
+.custom-select.ant-select-focused .ant-select-selector,
+.custom-select.ant-select-open .ant-select-selector {
+  background-color: #ffffff !important;
+  border: 1px solid #1677ff !important; 
+  box-shadow: none !important;         
+  outline: none !important;
+}
+
+.custom-select .ant-select-arrow {
+  color: #9ca3af;
+}
+
+.filter-select {
+  width: 280px !important;
+}
+
+.report-card .ant-table {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #f0f0f0;
+}
+
+.report-card .ant-table-thead > tr > th {
+  background-color: #fafafa;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #1677ff;
+  border-color: #1677ff;
+}
+
+.ant-checkbox-wrapper:hover .ant-checkbox-inner,
+.ant-checkbox:hover .ant-checkbox-inner,
+.ant-checkbox-input:focus + .ant-checkbox-inner {
+  border-color: #1677ff !important;
+  box-shadow: none !important;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .report-survey-container { padding: 16px; }
+  .report-actions { flex-wrap: wrap; }
+  .filter-select { width: 100% !important; }
+}
+
+@media screen and (max-width: 576px) {
+  .report-card .ant-card-head-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 12px 0;
+  }
+}

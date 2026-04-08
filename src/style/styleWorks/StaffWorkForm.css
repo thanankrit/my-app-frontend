@@ -1,0 +1,37 @@
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.full-row {
+  grid-column: 1 / -1;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.submit-btn-wrapper {
+  margin-top: 32px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.submit-btn {
+  width: 100%;
+  max-width: 250px; 
+  height: 40px;
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr; 
+    gap: 12px;
+  }
+  
+  .submit-btn {
+    max-width: 100%; 
+  }
+}

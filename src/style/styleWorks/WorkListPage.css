@@ -1,0 +1,80 @@
+.work-list-container {
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  min-height: 80vh;
+  background-color: #f0f2f5;
+}
+
+.work-list-card {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.work-header-section {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.work-page-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.work-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.work-select {
+  min-width: 120px;
+}
+
+.work-search-input {
+  width: 280px;
+}
+
+.work-add-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.work-table {
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .work-list-container {
+    padding: 16px 12px;
+  }
+
+  .work-header-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .work-page-title {
+    font-size: 1.2rem;
+  }
+
+  .work-header-actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch; 
+  }
+
+  .work-header-actions .work-select,
+  .work-header-actions .work-search-input,
+  .work-header-actions .work-add-btn {
+    width: 100%; 
+  }
+}

@@ -1,0 +1,29 @@
+.research-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.research-form-datepicker {
+  width: 100%;
+}
+
+.research-form-submit {
+  margin-top: 16px;
+}
+
+.research-section-research .ant-form-item,
+.research-section-journal .ant-form-item,
+.research-section-conference .ant-form-item {
+  margin-bottom: 12px;
+}
+
+.research-section-journal .ant-form-item > .ant-btn {
+  margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+  .research-form-grid {
+    grid-template-columns: 1fr;
+  }
+}

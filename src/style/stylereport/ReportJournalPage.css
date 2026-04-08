@@ -1,0 +1,75 @@
+.report-journal-container {
+  padding: 16px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.report-card {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.report-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-pdf {
+  background-color: #95a5a6 !important;
+  color: white !important;
+  border: none !important;
+}
+
+.btn-pdf:hover {
+  background-color: #7f8c8d !important;
+}
+
+.report-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.filter-teacher {
+  width: 100% !important;
+}
+
+.filter-year {
+  width: 100% !important;
+}
+
+@media screen and (min-width: 768px) {
+  .report-filters {
+    flex-direction: row; 
+  }
+
+  .filter-teacher {
+    width: 350px !important;
+  }
+
+  .filter-year {
+    width: 200px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .report-card .ant-card-head-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .report-actions {
+    width: 100%;
+  }
+
+  .report-actions button {
+    flex: 1; 
+  }
+}

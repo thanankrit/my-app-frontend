@@ -1,0 +1,64 @@
+.report-work-container {
+  padding: 16px;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+}
+
+.report-card {
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.card-title {
+  font-weight: 600;
+  color: #1677ff;
+}
+
+.report-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.report-filters {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.select-type, .select-owner, .select-year {
+  width: 100% !important;
+}
+
+
+@media screen and (min-width: 768px) {
+  .report-filters {
+    flex-wrap: nowrap;
+  }
+  .select-type { width: 160px !important; }
+  .select-owner { flex: 1; min-width: 250px !important; }
+  .select-year { width: 130px !important; }
+}
+
+@media screen and (max-width: 576px) {
+  .report-work-container {
+    padding: 8px;
+  }
+
+  .report-card .ant-card-head-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 0;
+  }
+
+  .report-actions {
+    width: 100%;
+  }
+
+  .report-actions button {
+    flex: 1; 
+    font-size: 13px;
+    padding: 4px 8px;
+  }
+}

@@ -1,0 +1,44 @@
+.research-list-container {
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  min-height: 80vh;
+  background-color: #f0f2f5;
+}
+
+.research-list-card {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.page-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 20px;
+}
+
+.back-btn {
+  margin-bottom: 16px;
+}
+
+.search-input {
+  width: 350px;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .research-list-container {
+    padding: 16px 12px;
+  }
+
+  .page-title {
+    font-size: 1.2rem;
+  }
+
+  .search-input {
+    width: 100%; 
+  }
+}

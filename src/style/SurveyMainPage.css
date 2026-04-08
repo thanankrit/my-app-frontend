@@ -1,0 +1,42 @@
+.survey-main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 0;
+}
+.admin-filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-filter-select {
+  width: 300px;
+  max-width: 100%;
+}
+
+@media (max-width: 576px) {
+  .survey-main-container .ant-card-body {
+    padding: 16px !important;
+  }
+  .responsive-survey-list .ant-list-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 0;
+  }
+  .responsive-survey-list .ant-list-item-action {
+    margin-left: 0 !important;
+    margin-top: 12px;
+    width: 100%;
+  }
+
+  .responsive-survey-list .ant-list-item-action > li {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .responsive-survey-list .ant-list-item-action .ant-btn {
+    width: 100%; 
+  }
+}

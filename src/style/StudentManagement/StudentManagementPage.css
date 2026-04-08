@@ -1,0 +1,85 @@
+.student-management-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.student-management-card {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.table-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  gap: 16px;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.filter-actions-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.filter-select {
+  width: 120px;
+}
+
+.filter-search {
+  width: 250px;
+}
+
+/* สำหรับ iPad และแท็บเล็ตขนาดเล็ก */
+@media (max-width: 768px) {
+  .student-management-container {
+    padding: 16px;
+  }
+  
+  .table-header-container {
+    flex-direction: column;
+    align-items: flex-start; 
+  }
+
+  .filter-actions-wrapper {
+    width: 100%;
+  }
+
+  .filter-search {
+    flex: 1; 
+    min-width: 200px;
+  }
+}
+
+/* สำหรับโทรศัพท์มือถือ */
+@media (max-width: 576px) {
+  .student-management-container {
+    padding: 10px;
+  }
+  
+  .student-management-card .ant-card-body {
+    padding: 16px;
+  }
+
+  .filter-actions-wrapper {
+    flex-direction: column; 
+    align-items: stretch; 
+    gap: 10px;
+  }
+
+  .filter-select,
+  .filter-search,
+  .action-btn {
+    width: 100% !important;
+    min-width: 100%;
+  }
+}

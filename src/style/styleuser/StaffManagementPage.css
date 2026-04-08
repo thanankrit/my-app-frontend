@@ -1,0 +1,77 @@
+.staff-list-container {
+  padding: 30px 20px;
+  background-color: #f0f2f5;
+  min-height: 80vh;
+}
+
+.staff-list-card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 16px;
+  flex-wrap: wrap; 
+}
+
+.page-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.action-section {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.staff-search-input {
+  width: 250px;
+}
+
+
+.staff-table .ant-table-thead > tr > th {
+  background-color: #fafafa;
+  font-weight: 600;
+  white-space: nowrap; 
+}
+
+.staff-table .ant-btn-danger {
+  background-color: #ff4d4f;
+  border-color: #ff4d4f;
+  color: white;
+}
+
+.staff-table .ant-btn:hover {
+  opacity: 0.85;
+}
+
+@media screen and (max-width: 768px) {
+  .staff-list-container {
+    padding: 16px 12px; 
+  }
+
+  .header-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .action-section {
+    width: 100%;
+    flex-direction: column; 
+    gap: 12px;
+  }
+
+  .staff-search-input {
+    width: 100%; 
+  }
+
+  .btn-add-staff {
+    width: 100%; 
+  }
+}

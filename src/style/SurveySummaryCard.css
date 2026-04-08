@@ -1,0 +1,51 @@
+.survey-summary-modal .ant-modal-body {
+  padding: 16px !important;
+}
+
+.responsive-likert-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+}
+
+.likert-table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+}
+
+.likert-table thead th {
+  background-color: #fafafa;
+  padding: 10px 5px;
+}
+
+.likert-table th, .likert-table td {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.likert-table td {
+  padding: 12px 8px;
+}
+
+.respondent-info-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.respondent-info-text {
+  flex: 1;
+  min-width: 250px; 
+}
+
+@media (max-width: 768px) {
+  .ant-table-cell {
+    font-size: 13px !important;
+    padding: 10px 8px !important;
+  }
+}

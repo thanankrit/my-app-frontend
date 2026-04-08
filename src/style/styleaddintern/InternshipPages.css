@@ -1,0 +1,154 @@
+.internship-create-container {
+  padding: 16px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card-title {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.card-title .ant-card-body {
+  padding: 24px;
+}
+
+.student-info {
+  background-color: #fafafa;
+  border: 1px dashed #d9d9d9;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.student-info p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end; 
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.ant-space {
+  flex-wrap: wrap;
+}
+
+.ant-table {
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.ant-form-item {
+  margin-bottom: 16px;
+}
+
+.ant-upload .ant-btn {
+  width: 100%;
+}
+
+.ant-input-search,
+.ant-select {
+  min-width: 180px;
+  width: 100%;
+}
+
+.internship-list-container {
+  padding: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.list-card {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.card-header-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.filter-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.filter-search {
+  flex: 1; 
+  min-width: 250px;
+}
+
+.filter-select {
+  width: 150px; 
+}
+
+/* ==================================================
+   Media Queries สำหรับ iPad และ โทรศัพท์มือถือ
+   ================================================== */
+
+@media (max-width: 768px) {
+  .internship-list-container {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .internship-list-container {
+    padding: 8px;
+  }
+  
+  .filter-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-search,
+  .filter-select {
+    width: 100% !important;
+    min-width: 100%;
+  }
+
+  .ant-card-head {
+    padding: 0 16px;
+  }
+  
+  .list-card .ant-card-body {
+    padding: 16px;
+  }
+}
+
+/* ==================================================
+   Media Queries สำหรับ iPad และ โทรศัพท์มือถือ
+   ================================================== */
+
+@media (max-width: 768px) {
+  .internship-create-container {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .internship-create-container {
+    padding: 8px;
+  }
+  
+  .card-title .ant-card-body {
+    padding: 16px; 
+  }
+
+  .form-buttons {
+    flex-direction: column;
+  }
+
+  .form-buttons .ant-btn {
+    width: 100%; 
+  }
+}

@@ -1,0 +1,30 @@
+.teacher-training-form-container {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  column-gap: 20px;
+  row-gap: 8px;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.submit-btn {
+  margin-top: 16px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr; 
+  }
+  .submit-btn {
+    margin-top: 24px;
+  }
+}

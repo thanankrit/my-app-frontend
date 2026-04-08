@@ -1,0 +1,74 @@
+.training-container {
+  padding: 24px 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.training-card {
+  width: 100%;
+  max-width: 1000px; 
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+}
+.training-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.training-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  color: #333;
+}
+
+.training-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.training-select {
+  width: 120px;
+}
+
+.training-search {
+  width: 220px;
+}
+
+.training-table {
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .training-container {
+    padding: 16px 12px;
+  }
+
+  .training-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .training-title {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  .training-actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .training-select,
+  .training-search,
+  .training-add-btn {
+    width: 100%;
+  }
+}

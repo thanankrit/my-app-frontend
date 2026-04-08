@@ -1,0 +1,146 @@
+.main-research-container {
+  padding: 10px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.card-title-large {
+  font-size: clamp(18px, 4vw, 22px);
+  font-weight: 600;
+  color: #1f1f1f;
+}
+.teacher-select-card {
+  text-align: center;
+  border-radius: 14px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 8px;
+}
+
+.teacher-select-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.teacher-avatar {
+  margin-bottom: 12px;
+  border: 2px solid #f0f0f0;
+}
+
+.teacher-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #262626;
+  line-height: 1.4;
+}
+
+.teacher-id {
+  font-size: 13px;
+  color: #8c8c8c;
+  margin-top: 4px;
+}
+
+.table-header-responsive {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.selected-teacher-title {
+  margin: 0;
+  font-size: clamp(14px, 4vw, 18px);
+}
+
+.filter-bar-responsive {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.search-box {
+  width: 100% !important;
+}
+
+.select-group {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.responsive-select {
+  flex: 1;
+  height: 32px;
+  padding: 0 8px;
+  border-radius: 6px;
+  border: 1px solid #d9d9d9;
+  background-color: white;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .main-research-container {
+    padding: 24px;
+  }
+
+  .filter-bar-responsive {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .search-box {
+    width: 250px !important;
+  }
+
+  .select-group {
+    width: auto;
+  }
+
+  .responsive-select {
+    width: 150px;
+  }
+}
+
+.responsive-table .ant-table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.view-icon-btn {
+  font-size: 18px;
+  color: #1890ff;
+  cursor: pointer;
+}
+
+.file-link-single {
+  color: #1890ff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+}
+
+.file-link-single:hover {
+  text-decoration: underline;
+}
+
+.modal-file-link {
+  color: #1890ff;
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding: 4px 8px;
+  background: #f0f7ff;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+@media (max-width: 576px) {
+  .ant-descriptions-item-label {
+    width: 90px !important;
+    font-size: 12px;
+  }
+  .ant-descriptions-item-content {
+    font-size: 12px;
+  }
+}

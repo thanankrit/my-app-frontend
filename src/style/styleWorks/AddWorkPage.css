@@ -1,0 +1,86 @@
+.research-container {
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  min-height: 80vh;
+  background-color: #f0f2f5; 
+}
+
+
+.research-card {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.back-btn {
+  margin-bottom: 24px;
+}
+
+.selection-section {
+  padding: 40px 0; 
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 16px;
+}
+
+
+.full-row {
+  grid-column: 1 / -1;
+}
+
+
+.full-width {
+  width: 100%;
+}
+
+.submit-btn {
+  margin-top: 24px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.button-group-vertical {
+  display: flex;
+  flex-direction: column; 
+  gap: 16px; 
+  max-width: 350px; 
+  margin: 0 auto; 
+}
+
+.button-group-vertical .ant-btn {
+  width: 100%; 
+  height: 48px; 
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .research-container {
+    padding: 16px 12px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr; 
+  }
+
+  .title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .selection-section {
+    padding: 20px 0;
+  }
+}

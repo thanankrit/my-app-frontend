@@ -1,0 +1,84 @@
+.report-container {
+  padding: 16px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.report-card .ant-card-head-wrapper {
+  flex-wrap: wrap; 
+}
+
+
+.report-export-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.report-filter-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.filter-select-teacher {
+  width: 100% !important;
+}
+
+.filter-group-small {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.filter-select-small {
+  flex: 1; 
+}
+
+@media screen and (min-width: 768px) {
+  .report-filter-section {
+    flex-direction: row;
+  }
+
+  .filter-select-teacher {
+    width: 350px !important;
+  }
+
+  .filter-group-small {
+    width: auto;
+  }
+
+  .filter-select-small {
+    width: 150px !important;
+    flex: none;
+  }
+}
+
+/* มือถือขนาดเล็กมาก */
+@media screen and (max-width: 480px) {
+  .report-container {
+    padding: 8px;
+  }
+
+  .report-export-buttons {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .report-export-buttons button {
+    flex: 1;
+  }
+
+  .filter-group-small {
+    flex-direction: column;
+  }
+
+  .card-title {
+    font-size: 0.95rem;
+  }
+}

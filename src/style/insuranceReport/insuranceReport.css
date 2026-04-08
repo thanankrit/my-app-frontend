@@ -1,0 +1,75 @@
+/* Container หลัก */
+.insurance-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* การจัดการ Grid ของปุ่มรายงาน 3 ปุ่ม */
+.report-card-grid {
+  display: grid;
+  /* Desktop: 3 คอลัมน์เท่ากัน */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+  margin-top: 24px;
+}
+
+/* สไตล์ปุ่มขนาดใหญ่ */
+.report-item-btn {
+  height: 160px !important; /* เพิ่มความสูงให้ดูเด่น */
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 16px !important;
+  border: 1px solid #f0f0f0 !important;
+  background: #ffffff !important;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+.report-item-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  border-color: #ff4d4f !important;
+  color: #ff4d4f !important;
+}
+
+.report-icon-wrapper {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+/* --- Responsive Design --- */
+
+/* Tablet (iPad) - ปรับเหลือ 2 คอลัมน์ หรือลดขนาดลง */
+@media (max-width: 992px) {
+  .report-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .insurance-container {
+    padding: 16px;
+  }
+}
+
+/* Mobile (โทรศัพท์) - ปรับเป็น 1 คอลัมน์เต็มจอ */
+@media (max-width: 576px) {
+  .report-card-grid {
+    grid-template-columns: 1fr; 
+    gap: 16px;
+  }
+  
+  .report-item-btn {
+    height: 120px !important; /* ลดความสูงลงในมือถือ */
+  }
+
+  .report-icon-wrapper {
+    font-size: 32px;
+  }
+
+  /* ปรับ Modal ให้เต็มความกว้างในมือถือ */
+  .ant-modal {
+    max-width: 95vw;
+    margin: 8px auto;
+  }
+}

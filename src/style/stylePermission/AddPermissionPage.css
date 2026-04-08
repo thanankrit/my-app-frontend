@@ -1,0 +1,94 @@
+.add-permission-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 0 16px; 
+  box-sizing: border-box;
+}
+
+.add-permission-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.add-permission-card label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.add-permission-card input {
+  width: 100%;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #d9d9d9;
+}
+
+.duplicate-text {
+  color: red;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.checkbox-container {
+  border: 1px solid #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 5px;
+  background-color: #fafafa; 
+}
+
+.add-permission-card .ant-checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.add-permission-card .ant-checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.add-permission-card .ant-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+/* ==================================================
+   Media Queries สำหรับ iPad และ โทรศัพท์มือถือ
+   ================================================== */
+
+@media (max-width: 768px) {
+  .add-permission-container {
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .add-permission-container {
+    margin: 15px auto;
+    padding: 0 12px;
+  }
+
+  .add-permission-card .ant-card-body {
+    padding: 16px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .action-buttons .ant-btn {
+    width: 100%;
+    height: 40px;
+  }
+}

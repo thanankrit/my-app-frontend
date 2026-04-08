@@ -1,0 +1,70 @@
+.report-research-container {
+  padding: 16px;
+  background-color: #f4f7f6;
+  min-height: 100vh;
+}
+.report-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.card-title {
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.report-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.report-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.filter-select-teacher {
+  width: 100% !important;
+}
+
+.filter-select-year {
+  width: 100% !important;
+}
+
+@media screen and (min-width: 768px) {
+  .report-filters {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .filter-select-teacher {
+    width: 350px !important;
+  }
+
+  .filter-select-year {
+    width: 200px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .report-card .ant-card-head-wrapper {
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 0;
+  }
+
+  .report-actions {
+    width: 100%;
+  }
+
+  .report-actions button {
+    flex: 1;
+  }
+
+  .report-research-container {
+    padding: 8px;
+  }
+}

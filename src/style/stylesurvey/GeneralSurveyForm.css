@@ -1,0 +1,94 @@
+
+.gsf-form-container {
+  width: 100%;
+}
+
+.gsf-warning-text {
+  margin-bottom: 16px;
+  color: #faad14;
+}
+
+.gsf-date-group {
+  display: flex;
+  gap: 16px;
+}
+
+.gsf-date-item {
+  flex: 1;
+}
+
+.gsf-date-picker {
+  width: 100%;
+}
+
+.gsf-main-topic-card {
+  margin-bottom: 16px;
+}
+
+.gsf-topic-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.gsf-topic-title {
+  margin: 0;
+  flex: 1;
+}
+
+.gsf-delete-main-icon {
+  color: red;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.gsf-subtopics-wrapper {
+  margin-top: 8px;
+}
+
+.gsf-subtopic-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+  padding-left: 24px;
+  align-items: flex-start;
+}
+
+.gsf-subtopic-item {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.gsf-delete-sub-icon {
+  color: #999;
+  font-size: 16px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.gsf-add-subtopic-btn {
+  margin-left: 24px;
+  width: calc(100% - 24px) !important;
+}
+
+.gsf-add-maintopic-btn {
+  margin-bottom: 16px;
+  height: 40px;
+}
+
+
+@media (max-width: 768px) {
+  .gsf-date-group {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .gsf-subtopic-row {
+    padding-left: 0;
+  }
+
+  .gsf-add-subtopic-btn {
+    margin-left: 0;
+    width: 100% !important;
+  }
+}
