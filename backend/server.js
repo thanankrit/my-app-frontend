@@ -3646,7 +3646,7 @@ app.get('/api/research/all', async (req, res) => {
 // ==========================================
 // Start Server
 // ==========================================
-const PORT = 8081;
+const PORT = process.env.PORT || 8081;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
